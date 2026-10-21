@@ -1,0 +1,201 @@
+/* SAP Fiori Horizon Theme for GBI Sales Dashboard */
+
+/* Global container styling */
+.stApp {
+    background-color: #F5F7FA;
+    font-family: "72", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #1D2D3E;
+}
+
+/* Fiori Horizon Shellbar (Top Header) */
+.fiori-shellbar {
+    background-color: #354A5F;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12);
+}
+
+.fiori-shellbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.fiori-shellbar-logo {
+    font-size: 1.35rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #FFFFFF;
+}
+
+.fiori-shellbar-subtitle {
+    font-size: 0.85rem;
+    color: #D1D5DB;
+    padding-left: 12px;
+    border-left: 1px solid #4B5563;
+}
+
+.fiori-shellbar-badge {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Fiori Horizon Cards / Tiles */
+.fiori-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 1.25rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.fiori-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.fiori-card-header {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #354A5F;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #F3F4F6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* KPI / Metric Tiles (Fiori Horizon KPI style) */
+.fiori-kpi-tile {
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-top: 4px solid #0A6ED1;
+    border-radius: 6px;
+    padding: 14px 18px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.fiori-kpi-title {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #64748B;
+    letter-spacing: 0.5px;
+}
+
+.fiori-kpi-value {
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: #0F172A;
+    margin: 4px 0;
+}
+
+.fiori-kpi-sub {
+    font-size: 0.78rem;
+    color: #64748B;
+}
+
+.fiori-kpi-positive {
+    color: #2E7D32;
+    font-weight: 600;
+}
+
+.fiori-kpi-negative {
+    color: #C83232;
+    font-weight: 600;
+}
+
+/* IBCS Notation Elements */
+.ibcs-threshold-badge-pos {
+    background-color: #E8F5E9;
+    color: #2E7D32;
+    border: 1px solid #A5D6A7;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.ibcs-threshold-badge-neg {
+    background-color: #FFEBEE;
+    color: #C83232;
+    border: 1px solid #FFCDD2;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Streamlit Native Tab styling adjustments for Fiori Look */
+button[data-baseweb="tab"] {
+    font-weight: 600;
+    color: #475569;
+    font-size: 0.95rem;
+    padding: 10px 18px;
+}
+
+button[data-baseweb="tab"][aria-selected="true"] {
+    color: #0A6ED1 !important;
+    border-bottom-color: #0A6ED1 !important;
+    border-bottom-width: 3px !important;
+}
+
+/* Sidebar Styling */
+section[data-testid="stSidebar"] {
+    background-color: #FFFFFF;
+    border-right: 1px solid #E5E7EB;
+}
+
+/* Table and dataframe borders */
+div[data-testid="stDataFrame"] {
+    border-radius: 6px;
+    border: 1px solid #E5E7EB;
+    background: #FFFFFF;
+}
+
+/* Dedicated Filter Box for Clear Chart Association */
+.fiori-filter-box {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-left: 4px solid #0A6ED1;
+    border-radius: 6px;
+    padding: 14px 18px;
+    margin-top: 1.25rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.fiori-filter-box-header {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #354A5F;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.view-section-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #354A5F;
+    margin-top: 1.5rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #E2E8F0;
+}
+
+.view-spacer {
+    height: 1.5rem;
+}
